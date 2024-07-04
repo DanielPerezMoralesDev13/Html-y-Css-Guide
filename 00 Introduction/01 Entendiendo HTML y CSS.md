@@ -8,11 +8,13 @@
 > *HTML (HyperText Markup Language) y CSS (Cascading Style Sheets) son los lenguajes fundamentales para crear y diseñar sitios web:*
 
 - **HTML:**
+  - *[HTML](https://es.wikipedia.org/wiki/HTML "https://es.wikipedia.org/wiki/HTML")*
   - *Es un lenguaje de marcado utilizado para estructurar el contenido de una página web.*
   - *Define elementos como encabezados, párrafos, listas, enlaces, imágenes y formularios.*
   - *Utiliza etiquetas para definir la estructura y semántica del contenido.*
 
 - **CSS:**
+  - *[CSS](https://es.wikipedia.org/wiki/CSS "https://es.wikipedia.org/wiki/CSS")*
   - *Es un lenguaje de estilo que define la presentación y el diseño de las páginas HTML.*
   - *Permite controlar aspectos como colores, tipografías, márgenes, rellenos, bordes y posicionamiento.*
   - *Utiliza selectores para aplicar estilos a elementos específicos del HTML.*
