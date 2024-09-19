@@ -1,0 +1,49 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Enlaces (Básico)</title>
+</head>
+
+<body>
+    <!-- El elemento <a> se utiliza para crear enlaces a otras páginas o recursos. -->
+    <!-- Los atributos comunes son href (hipervínculo) y title (información adicional al pasar el cursor). -->
+    <!-- El valor del atributo href debe incluir el protocolo (http, https) si es un enlace externo. -->
+    <!-- Ejemplo incorrecto: github.com/DanielPerezMoralesDev13/ -->
+    <!-- Ejemplo correcto: https://github.com/DanielPerezMoralesDev13/ -->
+
+    <!-- No es recomendable utilizar solo "//" para enlaces, ya que esto puede generar errores en algunas situaciones. -->
+    <!-- Ejemplo incorrecto (sin protocolo): <a href="//github.com/DanielPerezMoralesDev13/">Mi Github</a> -->
+
+    <h1>Web con Enlaces</h1>
+    <p>
+        Estás en la primera página.
+    </p>
+
+    <!-- Enlace a un perfil de Github con el atributo title para mostrar información adicional cuando pasamos el cursor. -->
+    <a href="https://github.com/DanielPerezMoralesDev13/"
+        title="Repositorio Personal de Github">Mi Github</a>
+
+    <!-- Enlaces a otros archivos HTML en la misma carpeta. -->
+    <a href="./Enlaces2.html">Enlace 2</a>
+    <a href="./Enlaces3.html">Enlace 3</a>
+
+    <h2>
+        Enlaces con target="_blank"
+    </h2>
+
+    <!-- El atributo target define dónde se abrirá el enlace. -->
+    <!-- target="_self" (valor por defecto) abre el enlace en la misma pestaña. -->
+    <!-- target="_blank" abre el enlace en una nueva pestaña o ventana del navegador. -->
+    <!-- El atributo title también sirve para mostrar información al pasar el cursor. -->
+    <a href="./Enlaces2.html"
+        target="_blank"
+        title="Este enlace se abrirá en otra pestaña">Enlace 2 en otra pestaña</a>
+
+</body>
+
+</html>

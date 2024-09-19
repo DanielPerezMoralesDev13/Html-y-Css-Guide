@@ -1,0 +1,65 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Enlazando CSS</title>
+    <!-- 
+        Esta es la forma recomendada de enlazar CSS a un documento HTML. 
+        Usar un archivo externo facilita la gestión y el mantenimiento del código.
+    -->
+    <link rel="stylesheet"
+        href="./style.css">
+</head>
+
+<body>
+    <h1>
+        Titulo
+    </h1>
+
+    <!-- 
+        Existen tres formas principales de aplicar CSS en HTML:
+        1. **Estilo en línea**: 
+           Se aplica directamente en la etiqueta usando el atributo "style". 
+           Aunque es fácil de usar, no se recomienda porque mezcla HTML y CSS, lo que dificulta el mantenimiento y la legibilidad del código.
+        2. **Etiquetas <style>**: 
+           Se pueden incluir estilos directamente en el documento HTML, pero no es la práctica más recomendable para proyectos grandes.
+    -->
+    <p style="color: blue; font-size: 20px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod consectetur nam neque mollitia pariatur
+        accusantium accusamus rerum qui odit? Cumque aut recusandae accusantium alias ipsum dolorem non nulla
+        aspernatur!
+    </p>
+
+    <!-- 
+        Este párrafo no tiene estilos aplicados, lo que significa que usará los estilos predeterminados 
+        del navegador o cualquier estilo que se haya definido en hojas de estilo externas.
+    -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis eum itaque nesciunt numquam, hic, consequatur
+        laudantium quam consectetur veritatis animi in, placeat illum necessitatibus explicabo minus. Explicabo sapiente
+        soluta itaque?
+    </p>
+
+    <!-- 
+        Esta es otra forma de aplicar CSS mediante la etiqueta <style>. 
+        Los estilos definidos aquí afectarán a todos los elementos del documento. 
+        Sin embargo, se desaconseja su uso en documentos grandes o complejos, ya que puede ser difícil de mantener. 
+    -->
+    <style>
+        p {
+            color: blue;
+            /* Cambia el color del texto de todos los párrafos a azul */
+        }
+
+        h1 {
+            color: green;
+            /* Cambia el color del texto del encabezado h1 a verde */
+        }
+    </style>
+</body>
+
+</html>

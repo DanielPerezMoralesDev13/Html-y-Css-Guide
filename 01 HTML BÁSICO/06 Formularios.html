@@ -1,0 +1,95 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formularios</title>
+</head>
+
+<body>
+    <!-- La etiqueta <form> se utiliza para crear un formulario en HTML. 
+         Su propósito es recoger datos del usuario y enviarlos a un servidor.
+    -->
+    <form>
+        <!-- La etiqueta <input> se usa para crear campos interactivos en un formulario.
+             Existen diferentes tipos de <input>, cada uno diseñado para recoger un tipo específico de información.
+        -->
+
+        <!-- Campo de texto para el nombre de usuario.
+             - type="text": indica que es un campo de texto.
+             - minlength: especifica el número mínimo de caracteres requeridos.
+             - placeholder: muestra un texto de ayuda que desaparece al escribir.
+             - name: el nombre del campo, usado para identificarlo al enviar el formulario.
+             - required: indica que el campo es obligatorio.
+        -->
+        <input type="text"
+            minlength="3"
+            placeholder="Daniel Benjamin Perez Morales"
+            name="username"
+            required>
+
+        <!-- Campo de entrada para el correo electrónico.
+             - type="email": valida que la entrada tenga formato de correo electrónico.
+        -->
+        <input type="email"
+            minlength="3"
+            placeholder="example@gmail.com"
+            name="useremail"
+            required>
+
+        <!-- Campo de entrada para la contraseña.
+             - type="password": oculta el texto ingresado.
+             - minlength: especifica el número mínimo de caracteres requeridos.
+        -->
+        <input type="password"
+            minlength="12"
+            placeholder="************"
+            name="userpassword"
+            required>
+
+        <!-- Casilla de verificación (checkbox).
+             - type="checkbox": permite al usuario seleccionar o deseleccionar una opción.
+        -->
+        <input type="checkbox"
+            name="subscribe"> Suscribirse a la newsletter
+
+        <!-- Botón de opción (radio).
+             - type="radio": permite seleccionar una opción entre varias.
+             - Se recomienda agrupar botones de radio usando el mismo atributo name.
+        -->
+        <input type="radio"
+            name="genero"> Hombre
+        <input type="radio"
+            name="genero"> Mujer
+
+        <!-- Campo para subir archivos.
+             - type="file": permite seleccionar un archivo desde el dispositivo.
+        -->
+        <input type="file"
+            name="fileupload">
+
+        <!-- Campo de entrada para seleccionar una fecha.
+             - type="date": permite elegir una fecha mediante un selector.
+        -->
+        <input type="date"
+            name="dob">
+
+        <!-- Campo para elegir un color.
+             - type="color": abre un selector de color.
+        -->
+        <input type="color"
+            name="favcolor">
+
+        <!-- Botón para enviar el formulario.
+             - type="submit": envía el formulario al servidor.
+             - value: define el texto que se muestra en el botón.
+        -->
+        <input type="submit"
+            value="Mandar Form">
+    </form>
+</body>
+
+</html>

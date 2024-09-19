@@ -1,6 +1,10 @@
-# Referencias
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
 
-- [Referencias](#referencias)
+# ***Indice***
+
+- [***Indice***](#indice)
   - [***Explicación de etiquetas padre e hija***](#explicación-de-etiquetas-padre-e-hija)
     - [***Representación en forma de árbol***](#representación-en-forma-de-árbol)
     - [***Representación en forma de cuadro***](#representación-en-forma-de-cuadro)

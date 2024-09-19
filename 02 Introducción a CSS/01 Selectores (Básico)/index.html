@@ -1,0 +1,43 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Selectores Básicos</title>
+    <!-- 
+        Esta es la forma recomendada de enlazar CSS a un documento HTML. 
+        Usar un archivo externo facilita la gestión y el mantenimiento del código, 
+        permitiendo reutilizar estilos en múltiples páginas.
+    -->
+    <link rel="stylesheet"
+        href="./style.css">
+</head>
+
+<body>
+    <h1>Ingredientes</h1>
+
+    <!-- 
+        Para aplicar estilos a elementos específicos en lugar de a todos los elementos de un mismo tipo, 
+        podemos usar clases e identificadores (IDs).
+        
+        - **Clases**: Se definen con un punto (.) y pueden aplicarse a múltiples elementos. 
+          Permiten agrupar elementos con estilos comunes.
+          La convención para nombrar clases es usar letras minúsculas y kebab-case (ejemplo: .ingrediente-faltante).
+
+        - **ID**: Se define con una almohadilla (#) y debe ser único dentro de la página. 
+          Se utiliza para identificar un único elemento que necesita estilos específicos.
+          La convención para nombrar id es usar letras minúsculas y kebab-case (ejemplo: .ingrediente-secreto).
+    -->
+    <ul>
+        <li class="ingrediente-faltante">Harina</li> <!-- Clase aplicada a este elemento -->
+        <li>Aceite</li>
+        <li>Leche</li>
+        <li class="ingrediente-faltante">Sal</li> <!-- Clase aplicada a este elemento -->
+        <li id="ingrediente-secreto">Levadura</li> <!-- ID aplicado a este elemento -->
+    </ul>
+</body>
+
+</html>

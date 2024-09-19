@@ -1,0 +1,95 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rutas</title>
+</head>
+
+<body>
+    <!-- Ejemplos de etiquetas en HTML: -->
+    <!-- 1. Etiquetas de autocierre: No requieren una etiqueta de cierre explícita, por ejemplo: <img>, <br>, <hr>. -->
+    <!-- 2. Etiquetas de línea: Se utilizan para contenido en línea, como <span> o <a>. -->
+    <!-- 3. Etiquetas de bloque: Generan un bloque de contenido, como <div>, <h1>, <p>. -->
+
+    <!-- Algunas etiquetas, como <h1> y <p>, requieren contenido para tener sentido. -->
+    <!-- Otras etiquetas, como <img>, necesitan atributos para funcionar correctamente. -->
+
+    <!-- Las etiquetas de autocierre (self-closing tags) no necesitan una etiqueta de cierre, como <img> o <input>. -->
+
+    <!-- Atributos importantes para la etiqueta <img>: -->
+    <!-- - src: Define la ruta de la imagen. -->
+    <!-- - alt: Proporciona una descripción alternativa de la imagen para accesibilidad y SEO. -->
+    <!-- - title: Muestra un texto adicional cuando el cursor se posa sobre la imagen. -->
+
+    <!-- Asegúrate de que la ruta del archivo (src) sea correcta; de lo contrario, la imagen no se cargará. -->
+
+    <!-- Estructura de carpetas recomendada para organizar archivos web: -->
+    <!-- - HTML: Archivos .html -->
+    <!-- - CSS: Archivos de estilos .css -->
+    <!-- - JavaScript: Archivos de scripts .js -->
+    <!-- - Imágenes: Archivos de imágenes -->
+    <!-- - Fuentes: Archivos de fuentes tipográficas -->
+
+    <!-- Existen dos tipos principales de rutas en HTML: absolutas y relativas. -->
+    <!-- - Rutas absolutas: Incluyen el dominio completo, por ejemplo, https://github.com/DanielPerezMoralesDev13/. -->
+    <!-- - Rutas relativas: Basadas en la ubicación del archivo actual en relación con el recurso al que se accede. -->
+
+    <!-- Ejemplo de ruta absoluta (solo para ilustración; la ruta debe ser válida para funcionar): -->
+    <img src="/Images/SpiderMan.png"
+        alt="Imagen de SpiderMan"
+        title="SpiderMan">
+
+    <!-- Se pueden anidar etiquetas dentro de otras etiquetas. -->
+    <!-- Por ejemplo, puedes incluir etiquetas de estilo dentro de etiquetas de texto para aplicar formato. -->
+
+    <!-- Algunas etiquetas, como <b>, ya no son recomendadas en HTML moderno. -->
+    <!-- La etiqueta <b> se usa para texto en negrita, pero no proporciona semántica adicional. -->
+    <!-- En su lugar, se recomienda usar <strong> para indicar importancia, que también aplica un estilo de negrita. -->
+
+    <!-- Ejemplos de rutas relativas: -->
+    <ul>
+        <li>
+            <!-- Ruta relativa dentro del mismo directorio: -->
+            <a href="03 Listas.html">Lista Enlace Ruta Relativa a Fichero <b>"03 Listas.html"</b></a>
+        </li>
+        <li>
+            <!-- Ruta relativa que retrocede un directorio: -->
+            <a href="../03 Listas.html">Lista Enlace Ruta Relativa a Fichero <b>"03 Listas.html"</b> (Ejemplo; puede que
+                no funcione)</a>
+        </li>
+        <li>
+            <!-- Ruta relativa en un subdirectorio: -->
+            <a href="Source/03 Listas.html">Lista Enlace Ruta Relativa a Fichero <b>"03 Listas.html"</b> (Ejemplo; puede
+                que no
+                funcione)</a>
+        </li>
+
+        <li>
+            <!-- Ruta relativa en un subdirectorio anidado: -->
+            <a href="Source/Html/03 Listas.html">Lista Enlace Ruta Relativa a Fichero <b>"03 Listas.html"</b> (Ejemplo;
+                puede
+                que no funcione)</a>
+        </li>
+        <li>
+            <!-- Ejemplos de rutas relativas para imágenes (solo para ilustración; la ruta debe ser válida para funcionar): -->
+            <img src="/Images/SuperHeroes/SpiderMan.png"
+                alt="Imagen de SpiderMan"
+                title="SpiderMan">
+        </li>
+        <li>
+            <img src="../Marvel/Universo/SpiderMan.png"
+                alt="Imagen de SpiderMan"
+                title="SpiderMan">
+        </li>
+    </ul>
+
+    <!-- Recomendación: Para redireccionar a otras páginas, es preferible usar rutas relativas en lugar de absolutas. -->
+    <!-- Las rutas relativas son más flexibles y pueden evitar problemas de seguridad asociados con rutas absolutas. -->
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+/* Author: Daniel Benjamin Perez Morales*/
+/* GitHub: https://github.com/DanielPerezMoralesDev13*/
+/* Email: danielperezdev@proton.me*/
+
+/* Comentarios CSS */
+
+/* 
+   La sintaxis para aplicar estilos en CSS es la siguiente:
+   selector {
+       propiedad: valor;
+   }
+   Donde:
+   - "selector" se refiere a la etiqueta HTML o clase/id que deseas estilizar.
+   - "propiedad" es el aspecto del estilo que deseas cambiar (como color, tamaño, márgenes, etc.).
+   - "valor" es el valor que se aplicará a esa propiedad.
+   
+   los {} en CSS indican el comienzo y el final de un bloque de declaración. Aquí tienes una explicación más detallada:
+
+    Bloque de declaración: Dentro de las llaves {}, se definen una o más propiedades y sus valores que aplican al selector especificado. Cada propiedad debe terminar con un punto y coma ;.
+*/
+
+/* Estilo para los párrafos */
+p {
+    color: blue;
+    /* Cambia el color del texto de los párrafos a azul */
+}

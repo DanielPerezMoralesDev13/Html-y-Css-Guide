@@ -1,0 +1,34 @@
+/* Author: Daniel Benjamin Perez Morales*/
+/* GitHub: https://github.com/DanielPerezMoralesDev13*/
+/* Email: danielperezdev@proton.me*/
+
+/* 
+   Selector de elementos: Se utiliza para aplicar estilos a todos los elementos de un tipo específico.
+   En este caso, seleccionamos todos los párrafos (<p>) y aplicamos el color azul.
+*/
+p {
+    color: blue;
+    /* Cambia el color del texto de todos los párrafos a azul */
+}
+
+/* 
+   Selector de clases: Se utiliza para aplicar estilos a elementos específicos que comparten la misma clase. 
+   Las clases se definen con un punto (.) seguido del nombre de la clase.
+   En este ejemplo, se selecciona cualquier elemento con la clase "ingrediente-faltante" 
+   y se establece el color en chartreuse.
+*/
+.ingrediente-faltante {
+    color: chartreuse;
+    /* Cambia el color del texto de los elementos con la clase "ingrediente-faltante" a chartreuse */
+}
+
+/* 
+   Selector de ID: Se utiliza para aplicar estilos a un único elemento que tiene un identificador único en la página. 
+   Los IDs se definen con una almohadilla (#) seguida del nombre del ID.
+   En este ejemplo, se selecciona el elemento con el ID "ingrediente-secreto" 
+   y se establece el color en azul.
+*/
+#ingrediente-secreto {
+    color: blue;
+    /* Cambia el color del texto del elemento con el ID "ingrediente-secreto" a azul */
+}
