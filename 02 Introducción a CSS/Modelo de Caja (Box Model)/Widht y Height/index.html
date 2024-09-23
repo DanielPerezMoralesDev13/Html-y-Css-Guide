@@ -1,0 +1,75 @@
+<!-- Author: Daniel Benjamin Perez Morales -->
+<!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
+<!-- Email: danielperezdev@proton.me -->
+
+<!-- https://youtu.be/ELSm-G201Ls?t=9897 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Modelo de Caja (Box Model) Width y Height</title>
+
+    <!-- Vincula un archivo CSS externo llamado "style.css", donde se definirán los estilos para este documento -->
+    <link rel="stylesheet"
+        href="./style.css">
+
+    <!-- 
+        ¿Qué es el Box Model?
+        El "Box Model" es el concepto en CSS que describe cómo se representan visualmente todos los elementos HTML.
+        Cada elemento HTML es una caja que contiene:
+        1. Content (Contenido): El área donde se muestra el contenido, como texto o imágenes.
+        2. Padding (Relleno): Espacio entre el contenido y el borde de la caja. Este área es parte de la caja.
+        3. Border (Borde): El borde que rodea el padding y el contenido. El borde puede tener un grosor, estilo y color personalizados.
+        4. Margin (Margen): Espacio externo a la caja, separa la caja de otros elementos. El margen no forma parte de la caja propiamente dicha.
+    -->
+
+    <!-- ¿Qué es "width"? 
+         "Width" establece el ancho de la caja, que incluye solo el contenido. El ancho no incluye el padding, border o margin.
+    -->
+
+    <!-- ¿Qué es "height"? 
+         "Height" define la altura de la caja, que incluye solo el área del contenido. Al igual que el ancho, no incluye padding, border o margin.
+    -->
+
+    <!-- ¿Qué es "padding"? 
+         "Padding" es el espacio entre el contenido y el borde de la caja. Aumentar el padding aumenta el espacio interno sin modificar el tamaño de la caja.
+    -->
+
+    <!-- ¿Qué es "border"? 
+         "Border" es el borde alrededor del contenido y padding. El grosor, estilo y color del borde pueden ser ajustados.
+    -->
+
+    <!-- ¿Qué es "margin"? 
+         "Margin" es el espacio fuera de la caja. Se utiliza para separar la caja de otros elementos. El margen no afecta el tamaño de la caja.
+    -->
+
+</head>
+
+<body>
+    <!-- <div> es un elemento de bloque que por defecto ocupa todo el ancho disponible -->
+    <div>
+        <!-- Encabezado principal dentro del <div> -->
+        <h1>
+            Title
+        </h1>
+    </div>
+
+    <!-- Formulario con campos de entrada para email, password y un botón -->
+    <form>
+        <!-- Campo de entrada de tipo email, con un marcador de posición "Email" -->
+        <input type="email"
+            placeholder="Email">
+
+        <!-- Campo de entrada de tipo password, con un marcador de posición "Password" -->
+        <input type="password"
+            placeholder="Password">
+
+        <!-- Botón de tipo "button" con la etiqueta "Iniciar Sesion" -->
+        <input type="button"
+            value="Iniciar Sesion">
+    </form>
+
+</body>
+
+</html>

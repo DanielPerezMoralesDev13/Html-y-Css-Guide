@@ -1,0 +1,57 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* Estilos para el elemento <div> */
+/* 
+   Los elementos <div> no tienen un ancho ni alto por defecto; su tamaño depende del contenido.
+   En este caso, definimos manualmente el ancho y alto de la caja.
+*/
+div {
+    /* Color de fondo rojo para el <div> */
+    background: red;
+
+    /* Ancho de la caja del <div> fijado en 400 píxeles */
+    width: 400px;
+
+    /* Altura de la caja del <div> fijada en 200 píxeles */
+    height: 200px;
+}
+
+/* Estilos para el elemento <h1> */
+h1 {
+    /* Color de fondo azul para el encabezado <h1> */
+    background-color: blue;
+
+    /* 
+       El alto del <h1> está comentado. 
+       Si se descomentara, la altura del <h1> sería de 300 píxeles, pero por ahora toma su altura en función del contenido.
+    */
+    /* height: 300px; */
+}
+
+/* Estilos para los elementos <input> */
+/*
+   Para adaptar los campos de entrada a pantallas móviles, se usa un ancho del 100% o 90%, 
+   lo que asegura que los inputs ocupen casi todo el ancho de su contenedor, en este caso, el <form>.
+*/
+input {
+    /* El ancho del <input> será del 90% del contenedor padre (el <form>) */
+    width: 90%;
+
+    /*
+       La propiedad "box-sizing: border-box" está comentada.
+       Si se descomentara, cualquier padding o borde del <input> se incluiría en el ancho y no lo expandiría.
+    */
+    /* box-sizing: border-box; */
+}
+
+/* Estilos para el elemento <form> */
+/*
+   El ancho del <input> depende del tamaño de su contenedor, el <form>.
+   Al establecer el ancho del <form> en 300px, el <input> tomará el 90% de esos 300px, adaptándose proporcionalmente.
+*/
+form {
+    /* El ancho del <form> está fijado en 300 píxeles */
+    width: 300px;
+}

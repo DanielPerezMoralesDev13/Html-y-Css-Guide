@@ -1,0 +1,41 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* Cargamos tipografías y estilos para los elementos <p> y <span> */
+
+/* Estilos para el elemento <p> */
+p {
+    /* Color del texto en rojo */
+    color: red;
+
+    /* Tipografía Montserrat cargada previamente desde Google Fonts */
+    font-family: "Montserrat";
+
+    /* Tamaño del texto de 13 píxeles */
+    font-size: 13px;
+
+    /* Peso de la fuente en negrita */
+    font-weight: bold;
+
+    /* Estilo de la fuente en cursiva */
+    font-style: italic;
+
+    /* Alineación del texto a la izquierda */
+    text-align: left;
+
+    /* Altura de línea de 2 unidades (doble espacio entre líneas) */
+    line-height: 2;
+
+    /* Espaciado entre caracteres de 1 píxel */
+    letter-spacing: 1px;
+}
+
+/* Estilos para el elemento <span> dentro del <p> */
+span {
+    /* Decora el texto con una línea que lo atraviesa */
+    text-decoration: line-through;
+
+    /* Cambia el color del texto a marrón */
+    color: brown;
+}
