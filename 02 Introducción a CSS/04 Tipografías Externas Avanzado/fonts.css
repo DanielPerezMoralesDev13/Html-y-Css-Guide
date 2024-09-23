@@ -1,0 +1,93 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* 
+lsd -lA
+.rw-rw-r-- d4nitrix13 d4nitrix13 1.1 KB Sun Sep 22 17:29:14 2024  index.html
+.rw-rw-r-- d4nitrix13 d4nitrix13 4.2 MB Sun Sep 22 17:27:43 2024  Montserrat.zip
+.rw-rw-r-- d4nitrix13 d4nitrix13 242 B  Sun Sep 22 17:29:19 2024  style.css 
+*/
+
+/* 
+unzip Montserrat.zip -d ./Font
+Archive:  Montserrat.zip
+ extracting: ./Font/OFL.txt
+ extracting: ./Font/README.txt
+ extracting: ./Font/static/Montserrat-Bold.ttf
+ extracting: ./Font/static/Montserrat-ExtraLight.ttf
+ extracting: ./Font/static/Montserrat-Thin.ttf
+ extracting: ./Font/static/Montserrat-Medium.ttf
+ extracting: ./Font/static/Montserrat-ExtraBold.ttf
+ extracting: ./Font/static/Montserrat-SemiBold.ttf
+ extracting: ./Font/static/Montserrat-Light.ttf
+ extracting: ./Font/static/Montserrat-Regular.ttf
+ extracting: ./Font/static/Montserrat-Black.ttf
+ extracting: ./Font/static/Montserrat-ThinItalic.ttf
+ extracting: ./Font/static/Montserrat-ExtraLightItalic.ttf
+ extracting: ./Font/static/Montserrat-LightItalic.ttf
+ extracting: ./Font/static/Montserrat-Italic.ttf
+ extracting: ./Font/static/Montserrat-MediumItalic.ttf
+ extracting: ./Font/static/Montserrat-SemiBoldItalic.ttf
+ extracting: ./Font/static/Montserrat-BoldItalic.ttf
+ extracting: ./Font/static/Montserrat-ExtraBoldItalic.ttf
+ extracting: ./Font/static/Montserrat-BlackItalic.ttf
+ extracting: ./Font/Montserrat-VariableFont_wght.ttf
+ extracting: ./Font/Montserrat-Italic-VariableFont_wght.ttf
+*/
+
+/* 
+   Definimos varias versiones de la fuente Montserrat utilizando la regla @font-face.
+   Descargamos el archivo .zip de la fuente desde Google Fonts o una fuente externa 
+   y enlazamos diferentes archivos de la fuente Montserrat con distintos pesos.
+   
+   El navegador puede cargar archivos más rápidamente si conoce el formato (truetype, opentype, etc.) 
+   gracias a la declaración "format". Esto ayuda a que se elija el formato más adecuado.
+*/
+
+/* Definición de la fuente con peso ExtraLight (100) */
+@font-face {
+    font-family: "Batman";
+    /* Nombre personalizado de la fuente que se usará en el CSS */
+    src: url("./Font/static/Montserrat-ExtraLight.ttf") format("truetype");
+    /* Ruta al archivo de la fuente y su formato */
+    font-weight: 100;
+    /* Peso ligero de la fuente */
+}
+
+/* Definición de la fuente con peso Regular (400) */
+@font-face {
+    font-family: "Batman";
+    /* El mismo nombre personalizado se usará para todas las variantes */
+    src: url("./Font/static/Montserrat-Regular.ttf") format("truetype");
+    /* Enlace al archivo con peso regular */
+    font-weight: 400;
+    /* Peso regular, que es el estándar en la mayoría de los textos */
+}
+
+/* Definición de la fuente con peso Bold (500) */
+@font-face {
+    font-family: "Batman";
+    src: url("./Font/static/Montserrat-Bold.ttf") format("truetype");
+    /* Enlace al archivo con peso semi-negrita */
+    font-weight: 500;
+    /* Peso semi-negrita para un texto más destacado */
+}
+
+/* Definición de la fuente con peso ExtraBold (700) */
+@font-face {
+    font-family: "Batman";
+    src: url("./Font/static/Montserrat-ExtraBold.ttf") format("truetype");
+    /* Enlace al archivo con peso ExtraBold */
+    font-weight: 700;
+    /* Peso extra negrita para encabezados o textos destacados */
+}
+
+/* Definición de la fuente con peso Black (900) */
+@font-face {
+    font-family: "Batman";
+    src: url("./Font/static/Montserrat-Black.ttf") format("truetype");
+    /* Enlace al archivo con el peso más grueso, Black */
+    font-weight: 900;
+    /* Peso Black, la variante más gruesa, ideal para títulos llamativos */
+}
