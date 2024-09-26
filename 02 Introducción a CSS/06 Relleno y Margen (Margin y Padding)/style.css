@@ -1,0 +1,97 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* background-color y background son propiedades equivalentes */
+.formulario {
+    background-color: red;
+    /* Establece el color de fondo del formulario */
+
+    /* El fondo puede no ser visible porque el formulario, por defecto, no tiene altura ni ancho. 
+       La altura y el ancho son determinados por los elementos de entrada (input) dentro de él. */
+
+    /* Este es un ejemplo de shorthand (abreviación). ¿Qué es shorthand? Se refiere a una forma resumida de escribir propiedades. */
+
+    /* padding: 20px; se distribuye en el sentido de las agujas del reloj:
+       - Arriba: 20px
+       - Derecha: 20px
+       - Abajo: 20px
+       - Izquierda: 20px */
+
+    /* Equivalente a lo siguiente: */
+    /* padding-top: 20px;
+       padding-right: 20px;
+       padding-bottom: 20px;
+       padding-left: 20px; */
+
+    /* Nota: No es necesario especificar la unidad para un valor de 0, ya que 0 es 0 en cualquier unidad: 
+       0%, 0px, 0rem, 0em, 0ex son equivalentes. */
+
+    /* Esta forma también es válida: */
+    /* padding: 20px 0 40px 20px; 
+       - Arriba: 20px
+       - Derecha: 0px
+       - Abajo: 40px
+       - Izquierda: 20px */
+
+    /* Otra forma de definir padding: 
+       - vertical (arriba y abajo)
+       - horizontal (derecha e izquierda) */
+    /* padding: 10px 50px; 
+       - Arriba: 10px
+       - Abajo: 10px
+       - Derecha: 50px
+       - Izquierda: 50px */
+
+    /* Finalmente, esta forma también es equivalente: */
+    /* padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 50px;
+       padding-right: 50px; */
+
+    padding: 30px;
+    /* Aplica un padding uniforme de 30px en todos los lados */
+}
+
+.formulario_input {
+    padding: 9px 12px;
+    /* Aumenta el tamaño de la caja, separando el contenido de los bordes */
+
+    width: 90%;
+    /* Define el ancho del campo de entrada al 90% del contenedor */
+    background-color: black;
+    /* Establece el color de fondo del campo de entrada */
+    color: red;
+    /* Establece el color del texto dentro del campo de entrada */
+
+    /* Este es un shorthand para el margen: */
+    margin: 10px;
+    /* Aplica un margen uniforme de 10px en todos los lados */
+
+    /* Equivalente a lo siguiente: */
+    /* margin: 10px 10px 10px 10px; */
+
+    /* También se puede expresar como: */
+    /* margin-top: 10px;
+       margin-right: 10px;
+       margin-bottom: 10px;
+       margin-left: 10px; */
+
+    /* Otra forma de hacerlo: */
+    /* margin: 10px 10px; 
+       - vertical (arriba y abajo): 10px
+       - horizontal (derecha e izquierda): 10px */
+}
+
+.formulario_submit {
+    letter-spacing: 2px;
+    /* Espaciado entre letras para un efecto visual mejorado */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    background-color: red;
+    /* Establece el color de fondo del botón de envío */
+    color: white;
+    /* Establece el color del texto en el botón de envío */
+    width: 50%;
+    /* Define el ancho del botón al 50% del contenedor */
+}

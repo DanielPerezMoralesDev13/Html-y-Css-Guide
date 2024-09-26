@@ -1,0 +1,56 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* Estilos para el cuerpo del documento */
+body {
+    margin: 0;
+    /* Establece un margen de 0 para el body, eliminando el espacio por defecto del navegador */
+
+    /* El colapso de márgenes (margin collapse) se ve afectado aquí. 
+       La propiedad display: flex; y flex-direction: column; se pueden usar para cambiar el comportamiento de los márgenes.
+       Sin embargo, están comentadas en esta versión. */
+    /* display: flex;
+       flex-direction: column; */
+}
+
+/* La clase .separator se utiliza para evitar el colapso de márgenes en ciertos casos */
+.separator {
+    overflow: hidden;
+    /* Forza a los márgenes colapsados a ser ignorados, creando un nuevo contexto de bloque */
+}
+
+/* Estilos para el primer contenedor (caja) */
+.box1 {
+    background-color: red;
+    /* Color de fondo de la caja */
+    height: 150px;
+    /* Altura de la caja */
+    width: 150px;
+    /* Ancho de la caja */
+    margin-bottom: 30px;
+    /* Margen inferior de 30px, separando box1 de box2 */
+    padding: 100px;
+    /* Relleno interno de 100px, separando el contenido del borde de la caja */
+}
+
+/* Nota: Aunque uno podría pensar que el margen de box1 y box2 se suman,
+   en este caso, como ambos márgenes son iguales, se mantiene el más grande. */
+
+/* Conceptos de elementos hijos y hermanos:
+   - Un "hermano" es un elemento que sigue a otro en el mismo nivel de jerarquía.
+   - En este caso, box1 y box2 son hermanos, ya que ambos están dentro del mismo contenedor (body). */
+.box2 {
+    background: red;
+    /* Color de fondo de la caja */
+    height: 150px;
+    /* Altura de la caja */
+    width: 150px;
+    /* Ancho de la caja */
+    margin-top: 60px;
+    /* Margen superior de 60px, separando box2 de box1 */
+    /* margin-top: 30px; - Esta línea está comentada, se reemplazó por un margen mayor. */
+}
+
+/* Importante: El margen no forma parte de la caja en el modelo de caja (box model).
+   El modelo de caja está compuesto por el borde, el relleno (padding) y el contenido. */
