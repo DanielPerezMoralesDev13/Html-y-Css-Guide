@@ -1,3 +1,59 @@
 /* Author: Daniel Benjamin Perez Morales */
 /* GitHub: https://github.com/DanielPerezMoralesDev13 */
 /* Email: danielperezdev@proton.me */
+
+/* Estilos para el cuerpo del documento */
+body {
+    background-color: black;
+    /* Establece el color de fondo de la página en negro */
+    font-family: sans-serif;
+    /* Define la fuente del texto como sans-serif, proporcionando un estilo moderno y limpio */
+    color: white;
+    /* Establece el color del texto en blanco para garantizar un buen contraste con el fondo negro */
+}
+
+/* Estilos para las tarjetas (cards) */
+.card {
+    background-color: coral;
+    /* Establece el color de fondo de la tarjeta en coral */
+    text-align: center;
+    /* Centra el texto dentro de la tarjeta */
+    width: 300px;
+    /* Define un ancho fijo de 300px para la tarjeta */
+    margin: auto;
+    /* Centra la tarjeta horizontalmente dentro de su contenedor padre */
+    margin-top: 20px;
+    /* Establece un margen superior de 20px para separar la tarjeta de otros elementos por encima */
+}
+
+/* Estilos para el encabezado principal (h1) */
+h1 {
+    padding-top: 10px;
+    /* Agrega un relleno superior de 10px, creando espacio entre el borde superior y el texto */
+    font-size: 22px;
+    /* Establece el tamaño de la fuente en 22px, haciendo el encabezado prominente */
+    margin: 0;
+    /* Elimina el margen por defecto alrededor del encabezado, evitando espacios no deseados */
+}
+
+/* Estilos para el segundo encabezado (h2) */
+h2 {
+    font-size: 14px;
+    /* Establece el tamaño de la fuente en 14px, más pequeño que h1 */
+    font-weight: 100;
+    /* Establece un peso de fuente ligero (100), dando un efecto sutil al texto */
+    letter-spacing: 2px;
+    /* Agrega un espaciado de 2px entre las letras, mejorando la legibilidad y el estilo */
+}
+
+/* Estilos para los párrafos (p) */
+p {
+    font-size: 9px;
+    /* Establece el tamaño de la fuente en 9px, lo que hace que el texto sea más pequeño */
+    padding: 20px;
+    /* Agrega un relleno de 20px alrededor del texto, separando el contenido de los bordes del párrafo */
+    background: lightcoral;
+    /* Establece un color de fondo ligero para el párrafo, mejorando el contraste visual */
+    text-align: justify;
+    /* Justifica el texto, alineando ambos bordes y dando un aspecto más formal */
+}
