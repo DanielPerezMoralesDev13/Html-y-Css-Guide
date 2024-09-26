@@ -1,3 +1,70 @@
 /* Author: Daniel Benjamin Perez Morales */
 /* GitHub: https://github.com/DanielPerezMoralesDev13 */
 /* Email: danielperezdev@proton.me */
+
+/* Estilo para el primer div, con un fondo rojo, ancho fijo, centrado y texto alineado al centro */
+div {
+    background-color: red;
+    /* Establece el color de fondo en rojo */
+    width: 200px;
+    /* Define el ancho del div a 200px */
+    margin: auto;
+    /* Centra el div horizontalmente */
+    text-align: center;
+    /* Alinea el texto dentro del div al centro */
+}
+
+/* Segunda definición de div, usada solo para estudiar y entender bordes */
+/* Generalmente no es buena práctica definir dos veces un mismo selector, pero aquí lo hacemos para propósitos educativos */
+
+div {
+    /* Establecemos un borde visible alrededor del div */
+    /* Se necesita definir el ancho, estilo y color del borde para que sea visible */
+    /* Ancho del borde (border-width), estilo del borde (border-style) y color del borde (border-color) */
+
+    /* Ejemplo de borde: */
+    border: 3px solid black;
+    /* Bordes de 3px, estilo sólido, y color negro */
+
+    /* La propiedad 'border' es una abreviatura (shorthand) que combina: 
+       border-width -> ancho del borde
+       border-style -> estilo del borde
+       border-color -> color del borde */
+
+    /* Es posible aplicar estilos a bordes individuales con:
+       border-top, border-bottom, border-left, border-right 
+       Cada uno de ellos acepta los valores de ancho, estilo y color */
+
+    /* También puedes descomponer las propiedades de cada borde, como: */
+    /* border-top-width: 3px;
+       border-top-style: solid;
+       border-top-color: black; */
+
+    /* Las mismas reglas aplican para los otros bordes (izquierda, derecha, abajo): */
+    /* border-bottom, border-left, border-right */
+
+    /* Para bordes redondeados usamos la propiedad 'border-radius' */
+    /* 'border-radius' controla los radios de las esquinas del borde. 
+       Puedes especificar hasta 4 valores para cada esquina:
+       - 1 valor: afecta todas las esquinas
+       - 2 valores: afecta en diagonal (superior izquierda/inferior derecha y superior derecha/inferior izquierda)
+       - 3 o 4 valores: afecta cada esquina de forma independiente */
+
+    border-radius: 10px 50px 0 2px;
+    /* Esquinas con diferentes radios: superior izquierda 10px, superior derecha 50px, inferior derecha 0 y inferior izquierda 2px */
+
+    /* También puedes especificar los radios de las esquinas individualmente: */
+    /* border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+       border-bottom-left-radius: 20px;
+       border-bottom-right-radius: 20px; */
+
+    /* Cuando solo proporcionas dos valores a 'border-radius', se aplican en diagonal: 
+       - El primer valor afecta la esquina superior izquierda e inferior derecha
+       - El segundo valor afecta la esquina superior derecha e inferior izquierda */
+    border-radius: 10px 50px;
+    /* Ejemplo: superior izquierda e inferior derecha con 10px, superior derecha e inferior izquierda con 50px */
+
+    /* 'border-radius' también acepta valores en porcentaje (%), que son relativos al tamaño del elemento.
+       Ejemplo común: border-radius: 50% para hacer un círculo o bordes muy redondeados. */
+}

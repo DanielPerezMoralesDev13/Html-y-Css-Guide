@@ -1,0 +1,36 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* Estilo para el cuerpo de la página (body) */
+body {
+   background-color: black;
+   /* Establece el color de fondo del cuerpo de la página en negro */
+}
+
+/* Estilo para los campos de entrada (input) */
+input {
+   /* margin agrega espacio exterior alrededor del elemento */
+   margin: 5px;
+   /* Aplica un margen de 5px alrededor de los campos de entrada */
+
+   /* padding agrega espacio interior dentro del elemento */
+   padding: 6px 9px;
+   /* Aplica 6px de padding vertical y 9px horizontal dentro de los campos de entrada */
+
+   /* border quita los bordes predeterminados del input */
+   border: none;
+   /* Elimina todos los bordes predeterminados del input */
+
+   /* border-bottom añade un borde solo en la parte inferior del input */
+   border-bottom: 1px solid greenyellow;
+   /* Añade un borde inferior de 1px, sólido y de color verde amarillento */
+
+   /* background define el color de fondo */
+   background: transparent;
+   /* Hace que el fondo del input sea transparente */
+
+   /* color define el color del texto dentro del input */
+   color: greenyellow;
+   /* Cambia el color del texto del input a verde amarillento */
+}
