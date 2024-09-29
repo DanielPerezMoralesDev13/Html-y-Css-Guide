@@ -1,0 +1,122 @@
+/* Author: Daniel Benjamin Perez Morales */
+/* GitHub: https://github.com/DanielPerezMoralesDev13 */
+/* Email: danielperezdev@proton.me */
+
+/* Páginas recomendadas para elegir colores:
+   - Color Picker RGB: https://rgbcolorpicker.com/
+   - Picker HSL: https://hslpicker.com/
+   - HTML Color Codes: https://htmlcolorcodes.com/color-picker/
+
+   Aquí tienes una lista de sitios web para crear una paleta de colores para tu página web:
+   - Color Hunt: https://colorhunt.co/
+   - Happy Hues: https://www.happyhues.co/
+   - Coolors: https://coolors.co/
+   - Picular: https://picular.co/
+*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* Ejemplo de color en RGB */
+    /*
+    background-color: red;                  // Color rojo
+    background-color: rgb(0, 0, 0);         // Negro
+    background-color: rgb(255, 255, 255);   // Blanco
+    background-color: rgb(255, 0, 0);       // Rojo
+    background-color: rgb(0, 255, 0);       // Verde
+    background-color: rgb(0, 0, 255);       // Azul
+    background-color: rgb(200, 100, 255);   // Color personalizdo
+    */
+
+    /* Ejemplo de color en RGBA */
+    /*
+    background-color: rgba(200, 100, 255, 0.3); // Con opacidad
+    background-color: rgba(200, 100, 255, 1);   // Totalmente opaco
+    background-color: rgba(200, 100, 255, 0);   // Totalmente transparente
+    */
+
+    /* Ejemplo de color en hexadecimal */
+    /*
+    background-color: #0bd;     // Color abreviado
+    background-color: #0bfa;    // Color abreviado
+    */
+
+    /* Ejemplo de color en HSLA */
+    /* background-color: hsla(210, 40%, 85%, 0.5); // Con opacidad */
+
+    /* Ejemplo de color en HSL */
+    background-color: hsl(210, 40%, 85%);
+    /* Color azul claro */
+
+    padding: 20px 50px;
+    /* Espaciado interno */
+    margin: 20px;
+    /* Margen alrededor */
+    margin-left: 100px;
+    /* Margen izquierdo específico */
+    text-align: center;
+    /* Alinear texto al centro */
+    color: hsl(210, 40%, 45%);
+    /* Color del texto */
+    border-top: 2px solid hsl(210, 40%, 45%);
+    /* Borde superior */
+    font-family: sans-serif;
+    /* Tipo de fuente */
+    font-weight: bold;
+    /* Negrita */
+}
+
+/* Descripción del modelo de color RGB */
+/*
+RGB significa:
+R -> Red (Rojo) 0-255
+G -> Green (Verde) 0-255
+B -> Blue (Azul) 0-255
+
+Colores primarios de la luz. Cada uno tiene 256 colores distintos:
+256 (Rojo) * 256 (Verde) * 256 (Azul) = 16,777,216 colores totales.
+*/
+
+/* Descripción del modelo de color RGBA */
+/*
+RGBA significa:
+R -> Red (Rojo) 0-255
+G -> Green (Verde) 0-255
+B -> Blue (Azul) 0-255
+A -> Alpha (Transparencia) 0-1, valores intermedios como 0.2, 0.4, etc.
+
+La combinación total de colores en RGBA es: 256^4 = 4,294,967,296.
+*/
+
+/* Descripción del modelo de color hexadecimal */
+/*
+Hexadecimal es un sistema de base 16 que usa:
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+La combinación total de colores en hexadecimal es también significativa.
+La notación sintáctica:
+Los primeros 2 dígitos son para el rojo, los siguientes 2 para el verde y los últimos 2 para el azul.
+Ejemplo:
+Rojo: 00, Verde: FF, Azul: 00 sería #00FF00 (Verde).
+
+Los valores pueden abreviarse:
+Por ejemplo, #AABBCC se puede simplificar a #ABC.
+
+Colores especiales:
+- Blanco: #FFFFFF -> #FFF
+- Negro: #000000 -> #000
+Ejemplo con opacidad:
+#0bd4; (el último dígito define la opacidad)
+*/
+
+/* Descripción del modelo de color HSL */
+/*
+HSL significa:
+background-color: hsl(hue, saturation, lightness);
+El primer valor es el matiz (hue), y los otros dos son porcentajes (saturation y lightness).
+*/
+
+/* Descripción del modelo de color HSLA */
+/*
+HSLA es similar a HSL, pero incluye el valor alpha para la opacidad.
+*/

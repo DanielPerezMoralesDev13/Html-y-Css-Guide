@@ -2,7 +2,6 @@
 <!-- GitHub: https://github.com/DanielPerezMoralesDev13 -->
 <!-- Email: danielperezdev@proton.me -->
 
-<!-- https://youtu.be/ELSm-G201Ls?t=14033 -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,11 +11,29 @@
         href="./style.css">
 
     <!-- Título de la página que aparece en la pestaña del navegador -->
-    <title> Tamaño de caja (Box Sizing)</title>
+    <title>Tamaño de Caja (Box Sizing)</title>
 </head>
 
 <body>
+    <!-- Explicación de los modelos de caja CSS -->
 
+    <!-- "Content Box": es el valor por defecto en CSS. El tamaño aplicado a la caja 
+         solo se refiere al contenido, excluyendo el padding y el borde. -->
+    <div class="box box-default">
+    </div>
+
+    <!-- "Border Box": incluye el contenido, padding y borde en el tamaño total de la caja,
+         pero no el margen. -->
+    <div class="box box-new">
+    </div>
+
+    <!-- Imágenes que ilustran los diferentes modelos de caja -->
+    <img src="/Images/ModeloCajaBorderBox.png"
+        alt="Ejemplo de Border Box"
+        title="Border Box Model">
+    <img src="/Images/ModeloCajaContentBox.png"
+        alt="Ejemplo de Content Box"
+        title="Content Box Model">
 </body>
 
 </html>

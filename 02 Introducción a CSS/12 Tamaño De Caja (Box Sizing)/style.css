@@ -1,3 +1,48 @@
 /* Author: Daniel Benjamin Perez Morales */
 /* GitHub: https://github.com/DanielPerezMoralesDev13 */
 /* Email: danielperezdev@proton.me */
+
+/* Eliminamos el margen predeterminado del body para evitar interferencias en el layout */
+body {
+    margin: 0;
+}
+
+/* Definición general de las cajas:
+   - width y height definen las dimensiones del contenido.
+   - En el modelo tradicional (content-box), el padding y border se añaden al tamaño definido.
+   - El fondo es rojo para visualizar mejor los límites de las cajas.
+*/
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+/* Estilo para la primera caja que usa el sistema tradicional de caja (content-box):
+   - "box-sizing: content-box" es el valor por defecto.
+   - El tamaño total de la caja se calculará sumando padding y borde a las dimensiones del contenido.
+   - Aquí el tamaño final será 170px x 170px (100px + 25px de padding a cada lado + 10px de borde a cada lado). 
+*/
+.box-default {
+    /* Modelo de caja por defecto (content-box) */
+    box-sizing: content-box;
+    padding: 25px;
+    border: 10px solid black;
+
+    /* Si necesitáramos ajustar manualmente el tamaño del contenido visible: 
+       En este caso, el width y height se reducirían para compensar padding y borde */
+    /* width: 30px;
+    height: 30px; */
+}
+
+/* Estilo para la segunda caja que usa el sistema border-box:
+   - "box-sizing: border-box" asegura que padding y borde formen parte del tamaño total.
+   - Aquí el tamaño final será exactamente 100px x 100px, ya que el padding y el borde se incluyen en esas dimensiones.
+*/
+.box-new {
+    /* El modelo de caja border-box incluye padding y borde en el tamaño total */
+    box-sizing: border-box;
+    padding: 25px;
+    border: 10px solid black;
+}
