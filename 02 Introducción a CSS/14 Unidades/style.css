@@ -1,3 +1,184 @@
 /* Author: Daniel Benjamin Perez Morales */
 /* GitHub: https://github.com/DanielPerezMoralesDev13 */
 /* Email: danielperezdev@proton.me */
+
+/* Medidas */
+
+/* 
+px: Es una medida absoluta que se utiliza comúnmente para definir tamaños de elementos, como imágenes, anchos y altos, así como el tamaño de la tipografía. 
+También se utiliza para definir valores de padding y margin.
+*/
+
+/*
+pt: Significa "punto" y casi no se utiliza, pero se usa ocasionalmente para impresión.
+*/
+
+/* 
+Las medidas físicas son más utilizadas en impresión, ya que un píxel puede variar físicamente en diferentes dispositivos como móviles, televisores y laptops. 
+No se recomienda su uso para diseños responsive.
+*/
+
+/* 
+cm: Significa "centímetros" y se utiliza principalmente para impresión.
+*/
+
+/* 
+mm: Significa "milímetros" y se utiliza también para imprimir.
+*/
+
+/* 
+in: Significa "pulgadas" y se utiliza principalmente en contextos de impresión.
+*/
+
+/* Unidades relativas */
+
+/* 
+Las unidades relativas son utilizadas para un diseño responsive. 
+La unidad más común es el porcentaje (%), que se refiere al tamaño del elemento contenedor.
+*/
+
+/* 
+em: Se refiere al tamaño de la fuente del elemento padre, y se usa para definir tamaños relativos.
+*/
+
+/* 
+rem: Se refiere al tamaño de la fuente del elemento raíz (html), lo que permite un diseño más predecible al basar los tamaños en una única fuente base.
+*/
+
+/* 
+Las unidades vh (viewport height) y vw (viewport width) son útiles para definir dimensiones en relación con el tamaño de la ventana del navegador.
+*/
+
+/* 
+vmax: Representa el valor máximo entre vh y vw.
+*/
+
+/* 
+vmin: Representa el valor mínimo entre vh y vw.
+*/
+
+html {
+    /* Se define un tamaño de fuente base para el documento */
+    /* font-size: 40px; */
+    font-size: 16px;
+    /* tamaño de fuente por defecto */
+}
+
+body {
+    font-size: 40px;
+    /* tamaño de fuente para el cuerpo */
+    /* font-size: 16px; */
+    margin: 0;
+    /* se elimina el margen por defecto del body */
+}
+
+div {
+    background-color: #ededed;
+    /* color de fondo para el contenedor */
+    /* padding: 0.2in; */
+    /* padding: 20mm; */
+    /* padding: 4cm; */
+    padding: 20px;
+    /* espacio interno del contenedor */
+    font-family: sans-serif;
+    /* tipo de fuente utilizado */
+    border-left: 5px solid #999;
+    /* borde izquierdo del contenedor */
+    /* width: 400px; */
+    /* font-size: 400px; */
+
+    /* width: 100vw; 
+    height: 100vh; */
+
+    width: 90vw;
+    /* ancho del contenedor en relación con el ancho de la ventana */
+    height: 90vh;
+    /* altura del contenedor en relación con la altura de la ventana */
+    margin: 0;
+    /* se eliminan márgenes por defecto */
+    box-sizing: border-box;
+    /* incluye el padding y el border en el tamaño total */
+
+    font-size: 20px;
+    /* tamaño de fuente dentro del contenedor */
+    margin: auto;
+    /* centra horizontalmente el contenedor */
+    margin-top: 10vh;
+    /* margen superior en relación con la altura de la ventana */
+}
+
+h1 {
+    margin: 0;
+    /* se eliminan márgenes por defecto */
+    /* esto hace un margin collapse */
+    /* margin-top: 50%; */
+
+    /* margin-bottom: 50%; */
+
+    /* margin-left: 50%; */
+
+    /* font-size: 24pt; */
+    /* con el % no funciona con texto */
+    /* en el font-size, cuando ponemos el %, por ejemplo 10%, lo que hacemos es aplicar el 10% del font-size de la caja contenedora (en este caso 400px) */
+    /* font-size: 10%; */
+
+    /* font-size: 24px; */
+
+    /* font-size: 20px; */
+
+    /* tamaños por defecto */
+    /* font-size: 14px; */
+
+    font-size: 23px;
+    /* tamaño de fuente para el título */
+
+    /* background-color: red; */
+
+    /* 50vh significa 50% de la altura de la ventana y 50vw significa 50% del ancho de la ventana */
+    /* height: 50vh; 
+    width: 50vw; */
+}
+
+span {
+    color: #999;
+    /* color del texto en el span */
+    /* font-size: 16pt; */
+    /* font-size: 16px; */
+    font-weight: 100;
+    /* peso de la fuente */
+    font-size: 1em;
+    /* tamaño de fuente relativo al elemento padre */
+}
+
+p {
+    color: #555;
+    /* color del texto en el párrafo */
+    /* background-color: red; */
+    /* margin: 0; */
+    /* el width por defecto es del 100% de su caja contenedora */
+    /* width: 100%; */
+
+    /* tendrá un 10% de su caja contenedora, o sea si el div tiene 400px, poner 10% es lo mismo que poner 40px */
+    /* width: 10%; */
+    /* font-size: 14px; */
+
+    /* 1em significa que si el font-size del elemento es 20px, entonces 1em valdría 20px. Si ponemos 2em, sería 40px, ya que hace 2 * 20px. 
+    1.5em sería 30px, y 1.25em sería 25px. */
+    /* font-size: 1em; */
+    /* font-size: 2em; */
+
+    /* rem funciona igual que em, solo que busca el tamaño del elemento raíz (en este caso html). Si el font-size de html es 30px, entonces 1rem sería 30px. */
+    /* font-size: 1rem; */
+
+    /* Si el elemento padre no tiene un font-size definido, buscará el elemento padre del padre. Si no hay un elemento definido, tomará el valor por defecto del navegador, que es 16px. */
+    font-size: 1em;
+    /* tamaño de fuente relativo al elemento padre */
+
+    /* Para tipografías */
+    /* line-height: 1ex; */
+    /* altura de línea basada en la altura de la letra "x" */
+    /* line-height: 1ch; */
+    /* altura de línea basada en el ancho del caracter "0" */
+}
+
+/* Cuando se utiliza para medidas precisas, por ejemplo, en resoluciones exactas, se recomienda usar px. */
